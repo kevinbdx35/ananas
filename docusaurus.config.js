@@ -8,6 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Ananas',
   tagline: 'Apprendre la programmation',
+  deploymentBranch:'.github.io',
+  trailingSlash: false,
   url: 'https://kevinbdx35.github.io/ananas/',
   baseUrl: 'https://github.com/kevinbdx35/ananas/',
   onBrokenLinks: 'throw',

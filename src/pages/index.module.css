@@ -4,10 +4,13 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 14rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background-image: url(/static/img/tutorial/pineapple-supply-co-Q7PclNhVRI0-unsplash.jpg);
+  background-position: bottom;
+  background-size: cover;
 }
 
 @media screen and (max-width: 966px) {

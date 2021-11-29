@@ -8,10 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Ananas',
   tagline: 'Apprendre la programmation',
-  deploymentBranch:'.github.io',
-  trailingSlash: false,
-  url: 'https://kevinbdx35.github.io/ananas/',
-  baseUrl: 'https://github.com/kevinbdx35/ananas/',
+  url: 'https://kevinbdx35.github.io',
+  baseUrl: '/ananas/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -45,7 +43,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Ananas',
+        title: 'ANANAS',
         logo: {
           alt: 'My Site Logo',
           src: 'img/ananas.svg',
@@ -59,7 +57,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/kevinbdx35',
             label: 'GitHub',
             position: 'right',
           },
@@ -82,7 +80,7 @@ const config = {
             items: [
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: '',
               },
             ],
           },

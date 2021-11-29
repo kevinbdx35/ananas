@@ -8,10 +8,13 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-image: url(/static/img/tutorial/pineapple-supply-co-Q7PclNhVRI0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-image: url('/static/img/tutorial/pineapple-supply-co-Q7PclNhVRI0-unsplash.jpg');
+  background-image: -webkit-image-set(url('/static/img/tutorial/pineapple-supply-co-Q7PclNhVRI0-unsplash.webp') 1x);
   background-position: bottom;
   background-size: cover;
 }
+
 
 @media screen and (max-width: 966px) {
   .heroBanner {

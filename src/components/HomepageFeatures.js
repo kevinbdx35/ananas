@@ -5,7 +5,7 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
   {
     title: 'Gratuit',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('../../static/img/ananas.svg').default,
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: 'Mise à jour',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('../../static/img/ananas.svg').default,
     description: (
       <>
         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go

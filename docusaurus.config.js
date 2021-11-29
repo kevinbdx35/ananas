@@ -10,6 +10,8 @@ const config = {
   tagline: 'Apprendre la programmation',
   url: 'https://kevinbdx35.github.io',
   baseUrl: 'https://github.com/kevinbdx35/ananas',
+  deploymentBranch: '.github.io',
+  trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',

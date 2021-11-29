@@ -55,7 +55,7 @@ const config = {
             position: 'left',
             label: 'Cours',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/kevinbdx35',
             label: 'GitHub',
@@ -89,7 +89,7 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                to: '/',
               },
             ],
           },

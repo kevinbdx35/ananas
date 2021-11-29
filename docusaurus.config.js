@@ -8,12 +8,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Ananas',
   tagline: 'Apprendre la programmation',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://kevinbdx35.github.io',
+  baseUrl: 'https://github.com/kevinbdx35/ananas',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
+  organizationName: 'kevinbdx35', // Usually your GitHub org/user name.
   projectName: 'ananas', // Usually your repo name.
 
   presets: [

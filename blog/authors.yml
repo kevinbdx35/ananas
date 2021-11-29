@@ -1,5 +1,17 @@
 endi:
   name: Kévin B.
-  title: Tech Educator & Lead Tech Supervisor | Google Certified Educator Level 1 | Full Stack Developer
-  url: https://github.com/kevinbdx35
+  title: Maintainer of Docusaurus
+  url: https://github.com/endiliey
   image_url: https://github.com/endiliey.png
+
+yangshun:
+  name: Yangshun Tay
+  title: Front End Engineer @ Facebook
+  url: https://github.com/yangshun
+  image_url: https://github.com/yangshun.png
+
+slorber:
+  name: Sébastien Lorber
+  title: Docusaurus maintainer
+  url: https://sebastienlorber.com
+  image_url: https://github.com/slorber.png

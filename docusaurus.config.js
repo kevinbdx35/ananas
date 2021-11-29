@@ -80,7 +80,7 @@ const config = {
             items: [
               {
                 label: 'Twitter',
-                href: '',
+                href: '/',
               },
             ],
           },

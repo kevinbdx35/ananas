@@ -10,8 +10,7 @@ La couleur est comme tout le reste, il est préférable de l'utiliser avec modé
 
 Appliquer la couleur à un projet de conception a beaucoup à voir avec l'équilibre et plus vous utiliserz de couleurs, plus il sera compliqué d'atteindre l'équilibre.
 
-> La couleur n'ajoute pas une qualité agréable au design - elle la renforce.
->  [Pierre Bonnard](https://fr.wikipedia.org/wiki/Pierre_Bonnard)
+> La couleur n'ajoute pas une qualité agréable au design - elle la renforce. - [*Pierre Bonnard*](https://fr.wikipedia.org/wiki/Pierre_Bonnard)
 
 Si vous avez besoin de couleurs supplémentaires au-delà de celles que vous avez définies dans votre palette, utilisez des nuances et des teintes. Ils fourniront un ton différent avec lequel travailler.
 

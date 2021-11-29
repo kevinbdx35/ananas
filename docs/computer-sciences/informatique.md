@@ -53,9 +53,9 @@ La lettre «A», par exemple, est le nombre 65, et «B» est 66, et ainsi de sui
 
 Le mappage comprend également la ponctuation et d'autres symboles. D'autres caractères, comme les lettres accentuées et les emoji, font partie d'une norme appelée **[Unicode](https://en.wikipedia.org/wiki/Unicode)** qui utilise plus de bits que l'ASCII pour accueillir tous ces caractères.
 
-**[Unicode site officiel populaire](https://home.unicode.org)**
+* **[Unicode site officiel populaire](https://home.unicode.org)**
 
-**[Unicode site officiel technique](https://www.unicode.org/main.html)**
+* **[Unicode site officiel technique](https://www.unicode.org/main.html)**
 
 Lorsque nous recevons un emoji, notre ordinateur ne reçoit en fait qu'un nombre décimal comme `128514`( `11111011000000010` en binaire, si vous pouvez le lire plus facilement) qu'il mappe ensuite sur l'image de l'emoji.
 

@@ -19,4 +19,4 @@ De même, je ne pourrais être tenu pour responsable de tes agissements et de la
 Je ne suis pas là pour ré-inventer la roue ou révolutionner ton savoir. Je partage juste ici avec toi, mes connaissances uniquement dans le but te t'aider à progresser à apprendre des choses.
 Ces connaissances ont été acquises aux cours de mes études, de mes lectures de livres ou d'articles sur l'Internet, d'expériences, d'essais-erreurs, de vidéos, de tutoriels et de tous supports possibles et imaginables pour apprendre quelque chose.
 
-Dans ma mesure du possible, je citerai toujours mes sources dans un document spécial.
+Dans la mesure du possible, je citerai toujours mes sources dans un document spécial.

@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('../../static/img/ananas.svg').default,
     description: (
       <>
-        De zéro à héro, Ananas t'accompagne dans ta progression.
+        De zéro à héros, Ananas t'accompagne dans ta progression.
       </>
     ),
   },

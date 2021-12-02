@@ -8,6 +8,8 @@ sidebar_position: 2
 
 ![CPU](https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/80486dx2-large.jpg/220px-80486dx2-large.jpg)
 
+*CPU*
+
 Composant de l’ordinateur, processeur ou unité centrale de traitement, il effectue des opérations arithmétiques, logiques, de transfert,...
 
 Il est composé de transistors ([**portes logiques**](https://fr.wikipedia.org/wiki/Fonction_logique) / [**portes logiques**](http://www.courstechinfo.be/Techno/PortesLogiques.pdf)), **c'est le cerveau de l'ordinateur**.
@@ -17,6 +19,7 @@ Il est situé sur la carte mère.
 Maintenant les CPU sont plus sophistiqué, il y a un ou plusieurs cœurs, ce qui lui permet de faire plusieurs choses à la fois comme faire fonctionner plusieurs programmes en parallèle.
 
 ![Raspberry Pi](https://m.media-amazon.com/images/I/71qC6kM1wQL._AC_SL1500_.jpg)
+*Raspberry Pi - mini ordinateur*
 
 ![Windows](/img/tutorial/processeur.png)
 *Windows*
@@ -42,6 +45,8 @@ Ces données distinguent un moment de temps un ordinateur moins cher d'un ordina
 Sans la RAM, l'ordinateur ne pourrait pas fonctionner, elle se trouve aussi sur la carte mère comme le CPU.
 
 ![RAM](/img/tutorial/ram.png)
+
+*RAM*
 
 Elle stocke donc les données de manière volatile uniquement quand l'ordinateur est allumé.
 

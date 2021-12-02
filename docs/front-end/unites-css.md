@@ -32,8 +32,8 @@ L’objectif est également d’adapter ton application à ces tailles de police
 
 **em** et **rem** sont toutes deux des unités de mesure flexibles et scalables traduites par le navigateur en pixel, qui dependent de la taille de police utilisée par ton système.
 
-* [Em(typography)]('https://en.wikipedia.org/wiki/Em_(typography)')
-* [Em W3C]('https://www.w3.org/Style/LieBos3e/em')
+* [Em (typography)](https://en.wikipedia.org/wiki/Em_(typography))
+* [Em W3C](https://www.w3.org/Style/LieBos3e/em)
 
 La taille de police par défaut dans un navigateur est de **16px**.
 

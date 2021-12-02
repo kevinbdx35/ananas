@@ -6,13 +6,27 @@ sidebar_position: 2
 
 ## Le code source
 
+![Code Source](https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80)
+
+Photo by <a href="https://unsplash.com/@jstrippa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">James Harrison</a> on <a href="https://unsplash.com/s/photos/code?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
 Une séquence de mots clés, de valeurs, de noms et de symboles qu’un outil d’analyse peut décortiquer pour générer le code exécutable.
 
 ## Le code exécutable
 
+![Code Binaire](https://images.unsplash.com/photo-1569396116180-210c182bedb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80)
+
+Photo by <a href="https://unsplash.com/@swimstaralex?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Sinn</a> on <a href="https://unsplash.com/s/photos/binary?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+
 Une séquence de valeurs entières mélangeant les valeurs (données) et les actions (instructions) dans un état figé, conservé normalement dans un fichier dans une mémoire permanente.
 
 ## Le programme actif
+
+![Apps](https://images.unsplash.com/photo-1523206489230-c012c64b2b48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80)
+
+Photo by <a href="https://unsplash.com/@neilsoniphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Neil Soni</a> on <a href="https://unsplash.com/s/photos/apps?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
 
 Une configuration de valeurs dans la mémoire l’ordinateur en cours de lecture par le processeur pour produire des modifications de certaines de ces valeurs. Le résultat est par exemple une fenêtre d’application.
 
@@ -61,7 +75,7 @@ Le niveau d'un langage fait référence à la proximité ou à l’éloignement 
 
 *Exemple langage :* PHP, Python, Visual Basic, C#,...
 
-
+![Niveau Des Langages](/img/tutorial/niveau.png)
 
 ## Bien coder c'est quoi?
 

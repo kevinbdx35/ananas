@@ -8,15 +8,21 @@ Le but ici est de te donner une vision globale des choses.
 Tu pourras décrouvrir les détails plus tard dans ce cursus.
 
 ## Pourquoi apprendre à programmer?
-
+![Mark Zuckerberg](https://images.frandroid.com/wp-content/uploads/2021/10/meta-facebook-1200x720.jpeg)
 >"Dans 15 ans, on enseignera la programmation comme la lecture et l'écriture...et on se demandera pourquoi ne pas l'avoir fait plus tôt..." - Mark Zuckerberg - Meta
 
+![Steve Jobs](https://www.penserchanger.com/wp-content/uploads/2015/03/leçons-steve-jobs.jpg)
 >"Tout le monde devrait apprendre à programmer, car cela apprend à penser" - Steve Jobs - Apple
 
->"Les programmeurs de demain sont les magiciens du futur." - Gave Newell - Valve
+![Gabe Newell](https://www.geekqc.ca/wp-content/uploads/2018/03/gabe-newell-valve.jpg)
+>"Les programmeurs de demain sont les magiciens du futur." - Gabe Newell - Valve
+
 
 >"74% des Français pensent que le code est la compétence de demain" - Kantar TNS pour Orange
 
+![Super Power](https://images.unsplash.com/photo-1534445967719-8ae7b972b1a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80)
+Photo by <a href="https://unsplash.com/@joshhild?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Josh Hild</a> on <a href="https://unsplash.com/s/photos/super-power?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
 >"C'est un véritable super pouvoir" 
 
 >"Le code est partout, Exemple les tableurs, excel, libre office,...addition, formule conditionnelles, macros,...les mobiles,..., les tv, les voitures,..., les jouets,..."

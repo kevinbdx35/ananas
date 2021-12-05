@@ -5,7 +5,7 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
   {
     title: 'Gratuit',
-    Svg: require('../../static/img/ananas.svg').default,
+    Svg: require('../../static/img/ananas-grad.svg').default,
     description: (
       <>
         Gratuit et libre d'accès.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Grandir',
-    Svg: require('../../static/img/ananas.svg').default,
+    Svg: require('../../static/img/tranche.svg').default,
     description: (
       <>
         De zéro à héros, Ananas t'accompagne dans ta progression.
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Mise à jour',
-    Svg: require('../../static/img/ananas.svg').default,
+    Svg: require('../../static/img/cocktail.svg').default,
     description: (
       <>
         Mise à jour régulière du contenu.

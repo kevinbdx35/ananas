@@ -204,3 +204,41 @@ Exemple : google fonts, intégration html + intégration css,  [Google Fonts](ht
 ## Les couleurs
 
 En CSS, les couleurs sont affichées en combinant la lumière rouge, verte et bleue (RGB).
+
+![Hexadecimal Color Wheel](https://i.pinimg.com/originals/91/db/31/91db3125752ae5f150be15a173b2759c.jpg)
+
+Il existe trois manières principales d'implémenter les couleurs.
+
+* Les words
+* Les valeurs en hexadécimal
+* Les valeurs en rgb(a)
+
+## Gras, italique, sous ligné
+
+```css
+font-weight: bold;
+```
+
+Tu peux gérer l'épaisseur de 100 à 900 (de 100 en 100) 400 = normal et 700 = bold font-weight: normal;
+
+```css
+font-weight: normal;
+```
+
+```css
+font-style: italic;
+```
+
+```css
+text-decoration: underline;
+text-decoration: none;
+text-decoration: line-through;
+```
+
+```css
+text-align : left;
+text-align : center;
+text-align : right;
+```
+
+## Exercices

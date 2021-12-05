@@ -60,6 +60,8 @@ Elle est constituée de transistors + condensateurs et il existe deux principaux
 
 [**Disque dur (HDD)**](https://fr.wikipedia.org/wiki/Disque_dur) : stocker des données durablement - action mécanique. 
 
+![HDD](/img/tutorial/HDD.png)
+
 De minuscules particules magnétiques sont sur les disques et selon leurs orientations ils symbolisent un `0` ou un `1`.
 
 Un disque dur peut tourner à 7 200 à 10 000 tours par minute.
@@ -68,7 +70,10 @@ Un disque dur peut tourner à 7 200 à 10 000 tours par minute.
 
 <iframe width="331" height="186" src="https://www.youtube.com/embed/3owqvmMf6No" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
 [**Disque dur Solid State Disk (SSD)**](https://fr.wikipedia.org/wiki/SSD) également appelé Mémoire Flash : stocker des données durablement - action numérique.
+
+![SSD](/img/tutorial/SSD.png)
 
 Le SSD ressemble beaucoup à une RAM mais les données ne sont pas volatiles.
 
@@ -80,16 +85,77 @@ Le hic est que la durée de vie d'un SSD selon la qualité et la marque vivra be
 
 Pour palier à cela il existe des disques dur hybride.
 
+
+
 Une clé USB contient une mémoire flash mais moins rapide que les disques SSD, moins fiable et moins importante en capacité.
 
 ## Type et gestion de la mémoire
 
-## Les connecteurs / ports
+Il y a un compromis entre l'espace, l'argent et la vitesse de transfert de données.
+
+![Entonnoir](/img/tutorial/ento.png)
+
+Le fond de l'entonnoir a tendance à coûter plus cher que le haut de l'entonnoir.
+
+![Entonnoir](/img/tutorial/ento2.png)
+
+Et sous le CPU, il y a la plus petite unité de mémoire "les registres" qui font 1 ou 4 ou 8 octets. C'est dans ces registres que le CPU stocke les valeurs de ses calculs.
+
+En tant que consommateur, les parties qui sont intéressantes à regarder sont :
+* la taille du disque dur
+* la quantité de RAM (en  étroite corrélation avec la quantité de travail possible et d'application ouverte)
+* le CPU
+
 
 ## Les connecteurs / ports
+
+![Ports](/img/tutorial/port.png)
+
+Le **Mini DisplayPort** est très répandu sur les ordinateurs portables et utile pour l'utilisation d'un second écran par exemple.
+
+Le **DisplayPort** est la même chose juste que le connecteur est plus grand.
+
+Le **HDMI** on peut le trouver sur les ordinateurs portables ou de bureau ou sur ton téléviseur à la maison car c'est aussi le type de câble que tu utilises pour brancher ton téléviseur sur ta console, décodeur et autres périphéries dans ton salon.
+
+Le **VGA,** c'est super super vieux, moins performant que ces autres technologies mais toujours utilisé.
+
+## USB (Universal Serial Bus)
+
+![USB](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/USB_icon.svg/2560px-USB_icon.svg.png)
+
+Ce logo signifie que tu as un port sur ton ordinateur dans lequel tu peux brancher toute une gamme d'appareils. Imprimante, scanner, appareil photo numérique, smartphone,...Ta souris, ton clavier,...
+
+Et ce type de branchement peut prendre plusieurs formes possibles, heureusement il existe des standards et certains d'entre eux sont plus courants que les autres. On appelle ça USB (Bus Série Universel), Bus signifie un support où peut voyager ou qui peut transporter de l'information.
+
+![USB](/img/tutorial/usb.png)
+
+* USB-A est le plus courant, souvent tu passes 50% du temps à chercher le sens de branchement.
+* USB-B est souvent utilisé pour les imprimantes et les scanners.
+* L'USB-C est plus récent et peut être branché dans les deux sens.
+* D'autres variantes existent souvent pour les téléphones.
+Les anciennes connexions USB sont plus lentes lors du transfert de données, donc si vous avez un disque dur externe du type SSD et que vous le bancher avec un type d'USB qui est lent, le transfert des données sera lent.
 
 ## Wireless (sans fil)
 
+Le Wifi est pour l'Internet sans fil.
+Bluetooth permet à des appareils tels que des claviers et des écouteurs sans fil de se connecter à votre ordinateur.
+
 ## Autres composants
 
+* **Read-Only Memory :** Mémoire morte
+* **[GPU (Graphics Processing Unit)](https://fr.wikipedia.org/wiki/Processeur_graphique)** : affichage graphique (processeur + ram)- calcul mathématique et géométrique
+* **Périphériques d’entrée - sortie :** souris, clavier, enceinte, écran,imprimante,…
+
 ## Les systèmes d'exploitation (OS)
+
+C'est **Le manager de l’ordinateur**, il est multitâches et est lancé après le programme de `BOOT` (démarrage) de l'ordinateur.
+
+Il gère l'espace de travail, les applications, les accès aux ressources, la sécurité,...
+
+* [Astuces-aide-informatique](https://www.astuces-aide-informatique.info/878/definition-systeme-exploitation)
+* [Système d'exploitation](https://fr.wikipedia.org/wiki/Liste_des_syst%C3%A8mes_d'exploitation)
+* [Système d'exploitation](https://fr.wikipedia.org/wiki/Syst%C3%A8me_d%27exploitation)
+
+Il est le plus souvent pré-installé par le fabricant de ton ordinateur sur le disque dur ou ton SSD mais tu peux aussi l'installer par toi-même.
+
+![Système d'exploitation](https://www.astuces-aide-informatique.info/wp-content/uploads/2016/03/systemes-exploitation.jpg)

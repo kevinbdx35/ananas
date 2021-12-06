@@ -47,3 +47,49 @@ Tous les navigateurs ajoutent des marges par défaut si tu n'en spécifies aucun
     box-sizing: border-box;
 }
 ```
+
+* [Box Model](http://espezua.github.io/blog/css-concepts.html)
+* [Box Model - MDN](https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/The_box_model)
+
+## Display property
+
+En HTML, il y a des éléments de bloc et des éléments en ligne.
+
+Les éléments blocs utilisent toute la largeur du navigateur et imposent des sauts de ligne. Ce qui est important chez eux, c'est que tu peux définir **leur hauteur ou leur largeur**.
+
+Les éléments en ligne ne font rien de tout cela.
+
+### Eléments en bloc par nature (block)
+
+* Paragraphe `<p>`
+* Titres `<h1>` à `<h6>`
+* Division `<div>`
+* Listes `<ol>`, `<ul>`, `<li>`
+* Formulaire `<form>`
+* ...
+
+[**Les éléments de bloc**](https://developer.mozilla.org/fr/docs/Web/HTML/Block-level_elements)
+
+### Eléments en ligne par nature (inline)
+
+* Span (`<span>`)
+* Image (`<img>`)
+* Ancre (`<a>`)
+* ...
+
+[**Les éléments en ligne**](https://developer.mozilla.org/fr/docs/Web/HTML/Inline_elements)
+
+### Les principaux display
+
+* Block
+* Inline
+* Inline-block
+* None (supprime l'élément comme s'il n'existait pas)
+
+## L'héritage
+
+Il est possible de définir des règles globales pour l'ensemble de la page grâce à l'héritage.
+
+Les éléments enfants héritent des propriétes de leurs éléments parents. A moins d'écraser leur style dans le selecteur propre comme nous le faisons dans l'exemple suivant h1 et h2.
+
+## Exercices

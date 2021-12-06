@@ -32,4 +32,8 @@ Voici toutes les ressources pour apprendre **Flexbox** par toi-même. Flexbox t'
 
 Voici toutes les ressources pour apprendre **Grid** par toi-même. Grid t'aidera à organiser plus facilement la mise en page de tes sites Web.
 
+## Bonus sur les sélecteurs
+
+[**Bonus sur les sélecteurs**](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Selectors)
+
 ## Exercices

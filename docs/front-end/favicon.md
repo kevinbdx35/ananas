@@ -38,6 +38,8 @@ Une favicon n’est pas directement responsable de ton référencement, mais ind
 
 L’importance du favicon, n’est donc pas seulement esthétique, mais aussi fonctionnelle.
 
+![Favicon Exemples](https://seranking.com/blog/wp-content/uploads/2020/01/Address-bar-favicons-min.png)
+
 Il joue un autre rôle très important sur ton site :
 
 * Contribue à renforcer la marque du site ;

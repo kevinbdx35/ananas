@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# CSS 3
+# CSS 3 - partie 1
 
 En utilisant `HTML`, tu as maintenant la possibilité  de créer des pages Web avec un certain nombre de composants différents et des balises imbriquées les unes dans les autres pour décrire la structure de toute page Web que tu souhaites créer. Tu vas bien entendu continuer à faire du HTML et progresser dans ce langage.
 

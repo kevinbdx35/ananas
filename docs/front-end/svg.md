@@ -22,6 +22,12 @@ Tu peux créer un format `svg` soit en le codant directement mais c'est assez fa
     <rect width = "300" height = "100" fill = "blue"></rect>
 </svg>    
 ```
+
+:::info
+* `fill` : signifie remplisssage de la forme
+* `stroke` : signifie tracer le trait, trait de contour
+:::
+
 Dans le premier cas, tu importes et intègres directement un image `svg`.
 Dans le deuxième cas, tu dessines un carré de 500 par 500 qui sera en quelque sorte ta feuille où va venir se dessiner ton svg. Ensuite via `rect` tu viens dessiner un rectangle de 300 par 100 de couleur bleu.
 
@@ -71,3 +77,5 @@ Dans le deuxième cas, tu dessines un carré de 500 par 500 qui sera en quelque 
 <svg width = "500" height = "500" style= "background : rgb(10, 50, 100)">
     <path d = "m 150 50 l 75 250 l 200 300" fill = "orange"></path>
 </svg>
+```
+

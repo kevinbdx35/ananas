@@ -46,21 +46,21 @@ Dans le deuxième cas, tu dessines un carré de 500 par 500 qui sera en quelque 
 ```
 ![Cercle](/img/tutorial/circle.png)
 
-```html title="Tu vas ici desinner un rectangle vert sur un fond bleu "
+```html title="Tu vas ici dessiner un rectangle vert sur un fond bleu "
 <svg width = "500" height = "500" style= "background : rgb(10, 50, 100)">
     <rect x = "50" y = "250" width = "100" height = "50" fill = "green"></rect>
 </svg>    
 ```
 ![Rectangle](/img/tutorial/recta.png)
 
-```html title="Tu vas ici desinner une ellipse rose sur un fond bleu "
+```html title="Tu vas ici dessiner une ellipse rose sur un fond bleu "
 <svg width = "500" height = "500" style= "background : rgb(10, 50, 100)">
     <ellipse cx = "50" cy = "250" rx = "100" ry = "50" fill = "pink"></ellipse>
 </svg>    
 ```
 ![Elipse](/img/tutorial/elipse.png)
 
-```html title="Tu vas ici desinner un polygone orange sur un fond bleu "
+```html title="Tu vas ici dessiner un polygone orange sur un fond bleu "
 <svg width = "500" height = "500" style= "background : rgb(10, 50, 100)">
     <polygon points = "200,10 250,100 160,210 110,250" fill = "orange"></polygon>
 </svg>    

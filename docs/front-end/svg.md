@@ -66,3 +66,8 @@ Dans le deuxième cas, tu dessines un carré de 500 par 500 qui sera en quelque 
 </svg>    
 ```
 ![Polygon](/img/tutorial/polygon.png)
+
+```html title="Tu vas ici créer un chemin - un dessin plûme en orange sur un fond bleu "
+<svg width = "500" height = "500" style= "background : rgb(10, 50, 100)">
+    <path d = "m 150 50 l 75 250 l 200 300" fill = "orange"></path>
+</svg>

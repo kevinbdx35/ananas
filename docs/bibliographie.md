@@ -8,154 +8,58 @@ Voici les différentes sources qui ont pu m'aider pour le projet Ananas
 
 ## Livre
 
-### A
+### ABC
 
-### B
+### DEF
 
-### C
+### GHI
 
-### D
+### JKL
 
-### E
+### MNO
 
-### F
+### PQR
 
-### G
+### STU
 
-### H
-
-### I
-
-### J
-
-### K
-
-### L
-
-### M
-
-### N
-
-### O
-
-### P
-
-### Q
-
-### R
-
-### S
-
-### T
-
-### U
-
-### V
-
-### W
-
-### XYZ
+### VWXYZ
 
 ## E-Book
 
-### A
+### ABC
 
-### B
+### DEF
 
-### C
+### GHI
 
-### D
+### JKL
 
-### E
+### MNO
 
-### F
+### PQR
 
-### G
+### STU
 
-### H
-
-### I
-
-### J
-
-### K
-
-### L
-
-### M
-
-### N
-
-### O
-
-### P
-
-### Q
-
-### R
-
-### S
-
-### T
-
-### U
-
-### V
-
-### W
-
-### XYZ
+### VWXYZ
 
 ## Site Internet
 
-### A
+### ABC
 
-### B
-
-### C
-
-### D
-
-### E
-
-### F
+### DEF
 
 Facebook. (s. d.). Build optimized websites quickly, focus on your content | docusaurus. Docusaurus. Consulté le 10 décembre 2021, à l’adresse https://docusaurus.io
 
-### G
+### GHI
 
-### H
+### JKL
 
-### I
+### MNO
 
-### J
+### PQR
 
-### K
+### STU
 
-### L
+Unsplash. (s. d.). Beautiful free images & pictures. Consulté le 10 décembre 2021, à l’adresse https://unsplash.com
 
-### M
-
-### N
-
-### O
-
-### P
-
-### Q
-
-### R
-
-### S
-
-### T
-
-### U
-
-unsplash. (s. d.). Beautiful free images & pictures. Consulté le 10 décembre 2021, à l’adresse https://unsplash.com
-
-### V
-
-### W
-
-### XYZ
+### VWXYZ

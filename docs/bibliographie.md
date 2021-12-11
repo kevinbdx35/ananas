@@ -35,6 +35,8 @@ Voici les différentes sources qui ont pu m'aider pour le projet Ananas
 
 ### DEF
 
+Dr. Axel Rauschmayer, A. R. (2021). Exploring JS : JavaScript books for programmers. Exploring JS : JavaScript books for programmers. Consulté le 11 décembre 2021, à l’adresse https://exploringjs.com/index.html
+
 ### GHI
 
 ### JKL

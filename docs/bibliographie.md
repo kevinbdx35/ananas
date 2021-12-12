@@ -6,7 +6,7 @@ sidebar_position: 10
 
 Voici les différentes sources qui ont pu m'aider pour le projet Ananas
 
-## Livre
+## Livres
 
 ### ABC
 
@@ -29,7 +29,7 @@ Voici les différentes sources qui ont pu m'aider pour le projet Ananas
 
 ------
 
-## E-Book
+## E-Books
 
 ### ABC
 
@@ -53,7 +53,7 @@ Marijn Haverbeke, M. H. (2018). Eloquent JavaScript. Eloquent JavaScript. Consul
 
 ------
 
-## Site Internet
+## Sites Internet
 
 ### ABC
 

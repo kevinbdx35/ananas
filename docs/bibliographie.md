@@ -12,6 +12,7 @@ Voici les différentes sources qui ont pu m'aider pour le projet Ananas
 
 ### DEF
 
+Delannoy, C. (2020). Le guide complet du langage c. Eyrolles.
 
 ### GHI
 

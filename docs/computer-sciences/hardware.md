@@ -121,7 +121,7 @@ Le **VGA,** c'est super super vieux, moins performant que ces autres technologie
 
 ## USB (Universal Serial Bus)
 
-![USB](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/USB_icon.svg/2560px-USB_icon.svg.png)
+![USB](/img/svg/usb.svg)
 
 Ce logo signifie que tu as un port sur ton ordinateur dans lequel tu peux brancher toute une gamme d'appareils. Imprimante, scanner, appareil photo numérique, smartphone,...Ta souris, ton clavier,...
 

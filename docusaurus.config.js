@@ -101,7 +101,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-  themes: ['@docusaurus/theme-live-codeblock']
+  themes: ['@docusaurus/theme-live-codeblock'],
   plugins: [
     [
       '@docusaurus/plugin-pwa',

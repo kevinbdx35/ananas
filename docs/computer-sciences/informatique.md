@@ -52,6 +52,8 @@ Et le binaire a du sens pour les ordinateurs car ils sont alimentés en électri
 
 Avec suffisamment de bits ou de chiffres binaires, les ordinateurs peuvent compter jusqu'à n'importe quel nombre.
 
+![Decimale-123](/img/svg/Bits_and_Bytes.svg)
+
 8 bits constituent un **Octet / Byte**.
 
 ## Représenter des données

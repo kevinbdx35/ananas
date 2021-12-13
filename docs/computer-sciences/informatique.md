@@ -20,7 +20,11 @@ Lorsque tu as appris à compter pour la première fois, tu aurais pu utiliser un
 
 Lorsque tu as appris à écrire des nombres avec les chiffres de 0 à 9, tu as appris à utiliser la décimale.
 
+![Decimale](/img/svg/number.svg)
+
 Par exemple, tu sais que ce qui suit représente cent vingt-trois.
+
+![Decimale-123](/img/svg/number2.svg)
 
 Le `3`est dans la colonne des unités, le `2` est dans la colonne des dizaines et le `1` est dans la colonne des centaines.
 
@@ -28,7 +32,15 @@ Donc, `123` c'est 100 × 1 + 10 × 2 + 1 × 3 = 100 + 20 + 3 = 123.
 
 Chaque place pour un chiffre représente une puissance de dix, car il y a dix chiffres possibles pour chaque place.
 
+![Decimale-123](/img/svg/exposant_dix.svg)
+
 En binaire, avec seulement deux chiffres, tu as des puissances de deux pour chaque valeur de position :
+
+![Decimale-123](/img/svg/exposant_deux.svg)
+
+Soit,
+
+![Decimale-123](/img/svg/exposant_deux_2.svg)
 
 Si tu voulais représenter 8, tu aurais besoin d'un autre chiffre :
 
@@ -51,6 +63,8 @@ La lettre «A», par exemple, est le nombre 65, et «B» est 66, et ainsi de sui
 **[ASCII TABLE](https://www.asciichart.com)**
 ![ASCII TABLE](/img/tutorial/ascii-table.png)
 
+![Emoji](/img/svg/alpha.svg)
+
 Le mappage comprend également la ponctuation et d'autres symboles. D'autres caractères, comme les lettres accentuées et les emoji, font partie d'une norme appelée **[Unicode](https://en.wikipedia.org/wiki/Unicode)** qui utilise plus de bits que l'ASCII pour accueillir tous ces caractères.
 
 * **[Unicode site officiel populaire](https://home.unicode.org)**
@@ -59,7 +73,11 @@ Le mappage comprend également la ponctuation et d'autres symboles. D'autres car
 
 Lorsque nous recevons un emoji, notre ordinateur ne reçoit en fait qu'un nombre décimal comme `128514`( `11111011000000010` en binaire, si vous pouvez le lire plus facilement) qu'il mappe ensuite sur l'image de l'emoji.
 
+![Emoji](/img/svg/emoji.svg)
+
 Une image est également composée de nombreux petits carrés, ou pixels, dont chacun peut être représenté en binaire avec un système appelé RGB, avec des valeurs pour la lumière rouge, verte et bleue dans chaque pixel. En mélangeant différentes quantités de chaque couleur, nous pouvons représenter des millions de couleurs :
+
+![Couleur-RGB](/img/svg/ananas-color.svg)
 
 Les programmes informatiques savent, en fonction du contexte de son code, si les nombres binaires doivent être interprétés comme des nombres, des lettres ou des pixels.
 Les vidéos ne sont que de nombreuses images affichées les unes après les autres, à un certain nombre d'images par seconde. La musique peut également être représentée par les notes jouées, leur durée et leur volume.
@@ -76,7 +94,7 @@ Nous pourrions également le feuilleter deux pages à la fois, mais si nous allo
 Mais un moyen encore plus efficace serait d'ouvrir l'annuaire téléphonique au milieu, de décider si Mike Smith sera dans la moitié gauche ou droite du livre (parce que le livre est alphabétisé) et de jeter immédiatement la moitié du problème. Nous pouvons le répéter en divisant le problème en deux à chaque fois. Avec 1024 pages pour commencer, nous n'aurions besoin que de 10 étapes de division en deux avant de ne plus avoir qu'une page à vérifier.
 En fait, nous pouvons représenter l'efficacité de chacun de ces algorithmes avec un graphique :
 
-![Informatique Boite Noire](/img/svg/ananas-algo2.svg)
+![Big O](/img/svg/ananas-algo2.svg)
 
 Notre première solution, une page à la fois, est comme la ligne rouge : notre temps de résolution augmente linéairement à mesure que la taille du problème augmente.
 La deuxième solution, deux pages à la fois, est comme la ligne jaune : notre pente est moins raide, mais toujours linéaire.

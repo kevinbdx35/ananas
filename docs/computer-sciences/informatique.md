@@ -6,21 +6,21 @@ sidebar_position: 1
 
 L'informatique résout fondamentalement des problèmes.
 
-Nous pouvons considérer la résolution de problèmes comme le processus consistant à prendre des informations (détails sur notre problème) et à générer des informations (la solution à notre problème). La **boîte noire** au milieu est l'informatique.
+Tu peux considérer la résolution de problèmes comme le processus consistant à prendre des informations (détails sur ton problème) et à générer des informations (la solution à ton problème). La **boîte noire** au milieu est l'informatique.
 
-![Informatique Boite Noire](/img/tutorial/informatique-boite-noire.jpg)
+![Informatique Boite Noire](/img/svg/ananas-computer.svg)
 
-Nous avons besoin d'un moyen de représenter les entrées, de telle sorte que nous puissions stocker et travailler avec des informations de manière standard.
+Tu as besoin d'un moyen de représenter les entrées, de telle sorte que tu puisses stocker et travailler avec des informations de manière standard.
 
 ## Binaire -  Base 2
 
 Un ordinateur, au niveau le plus bas, stocke les données en **binaire**, un système numérique dans lequel il n'y a que deux chiffres, `0` et `1`.
 
-Lorsque nous avons appris à compter pour la première fois, nous aurions pu utiliser un doigt pour représenter une chose. Ce système est appelé unaire.
+Lorsque tu as appris à compter pour la première fois, tu aurais pu utiliser un doigt pour représenter une chose. Ce système est appelé unaire.
 
-Lorsque nous avons appris à écrire des nombres avec les chiffres de 0 à 9, nous avons appris à utiliser la décimale.
+Lorsque tu as appris à écrire des nombres avec les chiffres de 0 à 9, tu as appris à utiliser la décimale.
 
-Par exemple, nous savons que ce qui suit représente cent vingt-trois.
+Par exemple, tu sais que ce qui suit représente cent vingt-trois.
 
 Le `3`est dans la colonne des unités, le `2` est dans la colonne des dizaines et le `1` est dans la colonne des centaines.
 
@@ -28,15 +28,15 @@ Donc, `123` c'est 100 × 1 + 10 × 2 + 1 × 3 = 100 + 20 + 3 = 123.
 
 Chaque place pour un chiffre représente une puissance de dix, car il y a dix chiffres possibles pour chaque place.
 
-En binaire, avec seulement deux chiffres, nous avons des puissances de deux pour chaque valeur de position :
+En binaire, avec seulement deux chiffres, tu as des puissances de deux pour chaque valeur de position :
 
-Si nous voulions représenter 8, nous aurions besoin d'un autre chiffre :
+Si tu voulais représenter 8, tu aurais besoin d'un autre chiffre :
 
 ```
 8421
 1000
 ```
-Et le binaire a du sens pour les ordinateurs car nous les alimentons en électricité, qui peut-être comme interrupteur d'une lampe 💡, allumée ou éteinte. Dans un ordinateur, il existe des millions ou des milliards d'interrupteurs appelés transistors qui peuvent stocker de l'électricité et en représenter un peu en étant «allumés» ou «éteints».
+Et le binaire a du sens pour les ordinateurs car ils sont alimentés en électricité, qui peut-être comme interrupteur d'une lampe 💡, allumée ou éteinte. Dans un ordinateur, il existe des millions ou des milliards d'interrupteurs appelés transistors qui peuvent stocker de l'électricité et en représenter un peu en étant «allumés» ou «éteints».
 
 Avec suffisamment de bits ou de chiffres binaires, les ordinateurs peuvent compter jusqu'à n'importe quel nombre.
 
@@ -68,13 +68,15 @@ Les vidéos ne sont que de nombreuses images affichées les unes après les autr
 
 La boîte noire précédente contiendra des algorithmes, des instructions étape par étape pour résoudre un problème :
 
-![Informatique Boite Noire](/img/tutorial/informatique-boite-noire.jpg)
+![Informatique Boite Noire](/img/svg/ananas-algo.svg)
 
 Disons que nous voulions trouver un ami, Mike Smith, dans un annuaire téléphonique.
 Nous pourrions commencer par le feuilleter, une page à la fois, jusqu'à ce que nous trouvions Mike Smith ou atteignions la fin du livre.
 Nous pourrions également le feuilleter deux pages à la fois, mais si nous allons trop loin, nous devons pouvoir revenir en arrière.
 Mais un moyen encore plus efficace serait d'ouvrir l'annuaire téléphonique au milieu, de décider si Mike Smith sera dans la moitié gauche ou droite du livre (parce que le livre est alphabétisé) et de jeter immédiatement la moitié du problème. Nous pouvons le répéter en divisant le problème en deux à chaque fois. Avec 1024 pages pour commencer, nous n'aurions besoin que de 10 étapes de division en deux avant de ne plus avoir qu'une page à vérifier.
 En fait, nous pouvons représenter l'efficacité de chacun de ces algorithmes avec un graphique :
+
+![Informatique Boite Noire](/img/svg/ananas-algo2.svg)
 
 Notre première solution, une page à la fois, est comme la ligne rouge : notre temps de résolution augmente linéairement à mesure que la taille du problème augmente.
 La deuxième solution, deux pages à la fois, est comme la ligne jaune : notre pente est moins raide, mais toujours linéaire.

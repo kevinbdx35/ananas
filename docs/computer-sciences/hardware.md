@@ -93,7 +93,7 @@ Une clé USB contient une mémoire flash mais moins rapide que les disques SSD, 
 
 Il y a un compromis entre l'espace, l'argent et la vitesse de transfert de données.
 
-![Entonnoir](/img/tutorial/ento.png)
+![Entonnoir](/img/svg/entonnoir.svg)
 
 Le fond de l'entonnoir a tendance à coûter plus cher que le haut de l'entonnoir.
 

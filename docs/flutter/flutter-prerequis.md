@@ -25,3 +25,10 @@ Pour résumer pour développer une application **iOS** :
 * Mac
 * Android Studio
 * iOS Emulator ou device physique
+
+## Installation
+
+1. Tu dois installer [**Flutter SDK**](https://docs.flutter.dev/get-started/install/macos).
+2. Tu dois installer [**Android Studio**](https://developer.android.com/studio/).
+3. Tu dois installer un Emulateur Android
+

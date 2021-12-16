@@ -73,6 +73,13 @@ Ensuite l'ordinateur assemblera tous les paquets pour recréer l'image du chat.
 
 <iframe width="708" height="398" src="https://www.youtube.com/embed/26jazyc7VNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<iframe width="708" height="398" src="https://www.youtube.com/embed/_0thnFumSdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+ERRATUM : - 2'35" un routeur permet d'interconnecter des réseaux (et non des sous-réseaux)
+ERRATUM : - 3'18" ce sont 4 couches TCP/IP (et non des couches logicielles)
+
+![OSI vs TCP/IP](/img/tutorial/net_basic_osi.png)
+
 ## Les ports
 
 Pour s'assurer que Google sache que nous demandons une page Web et non un e-mail ou un autre service, nous utilisons l'information des ports.
@@ -139,3 +146,4 @@ traceroute www.google.com
 
 Standard ISO établi pour les communications réseaux. Il contient 7 couches superposées. Chaque couche propose ses services à la couche supérieure.
 
+![Modèle OSI](/img/svg/OSI_Model_v1.svg)

@@ -58,6 +58,8 @@ Marijn Haverbeke, M. H. (2018). Eloquent JavaScript. Eloquent JavaScript. Consul
 
 ### ABC
 
+Cookie connecte. (s. d.). YouTube. Consulté le 16 décembre 2021, à l’adresse https://www.youtube.com/channel/UC5cs06DgLFeyLIF_II7lWCQ
+
 ### DEF
 
 David J. Malan, D. M. (2021). CS50x 2021. CS50 - Harvard. Consulté le 11 décembre 2021, à l’adresse https://cs50.harvard.edu/x/2021/

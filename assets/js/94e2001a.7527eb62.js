@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcoursess=self.webpackChunkcoursess||[]).push([[5910],{8875:function(a){a.exports=JSON.parse('{"allTagsPath":"/ananas/blog/tags","slug":"/ananas/blog/tags/programmation","name":"programmation","count":1,"permalink":"/ananas/blog/tags/programmation"}')}}]);

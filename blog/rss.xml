@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Ananas Blog</title>
+        <link>https://kevinbdx35.github.io/ananas/blog</link>
+        <description>Ananas Blog</description>
+        <lastBuildDate>Tue, 30 Nov 2021 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Pourquoi Ananas?]]></title>
+            <link>https://kevinbdx35.github.io/ananas/blog/pourquoi-ananas</link>
+            <guid>pourquoi-ananas</guid>
+            <pubDate>Tue, 30 Nov 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[J'ai une chemise aux motifs ananas  que j'adore 😍 et je trouve que ce fruit 🍍 est trop cool!]]></description>
+            <content:encoded><![CDATA[<p>J&#x27;ai une chemise aux motifs ananas  que j&#x27;adore 😍 et je trouve que ce fruit 🍍 est trop cool! </p><p>Il a un look fantastique et gustativement c&#x27;est un régal, surtout sous forme de jus 🍹.</p><p>Il me fait penser aux îles 🏝️ et j&#x27;utilise également souvent une image d&#x27;ananas pour mes photos 📷 de profil.</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

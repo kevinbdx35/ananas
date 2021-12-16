@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcoursess=self.webpackChunkcoursess||[]).push([[2535],{5641:function(s){s.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Pourquoi Ananas?","permalink":"/ananas/blog/pourquoi-ananas"}]}')}}]);

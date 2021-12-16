@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://kevinbdx35.github.io/ananas/blog</id>
+    <title>Ananas Blog</title>
+    <updated>2021-11-30T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://kevinbdx35.github.io/ananas/blog"/>
+    <subtitle>Ananas Blog</subtitle>
+    <icon>https://kevinbdx35.github.io/ananas/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Pourquoi Ananas?]]></title>
+        <id>pourquoi-ananas</id>
+        <link href="https://kevinbdx35.github.io/ananas/blog/pourquoi-ananas"/>
+        <updated>2021-11-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[J'ai une chemise aux motifs ananas  que j'adore 😍 et je trouve que ce fruit 🍍 est trop cool!]]></summary>
+        <content type="html"><![CDATA[<p>J&#x27;ai une chemise aux motifs ananas  que j&#x27;adore 😍 et je trouve que ce fruit 🍍 est trop cool! </p><p>Il a un look fantastique et gustativement c&#x27;est un régal, surtout sous forme de jus 🍹.</p><p>Il me fait penser aux îles 🏝️ et j&#x27;utilise également souvent une image d&#x27;ananas pour mes photos 📷 de profil.</p>]]></content>
+        <author>
+            <name>Kévin B.</name>
+            <uri>https://github.com/kevinbdx35</uri>
+        </author>
+    </entry>
+</feed>

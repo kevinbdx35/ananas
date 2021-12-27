@@ -19,11 +19,13 @@ D'utiliser des variables de stocker des valeurs et de les modifier.
 La capacité de faire plusieurs choses à la fois, de répondre aux changements de notre programme,...
 
 L'environnement de programmation pour Scratch ressemble à ceci:
-![Scratch Site Officiel](/img/scratch/scratch1.svg)
+![Scratch Site Officiel](/img/scratch/scratch1.png)
 
-![Scratch Site Officiel](/img/scratch/scratch3.svg)
+![Scratch Site Officiel](/img/scratch/scratch2.png)
 
-![Scratch Site Officiel](/img/scratch/scratch4.svg)
+![Scratch Site Officiel](/img/scratch/scratch3.png)
+
+![Scratch Site Officiel](/img/scratch/scratch4.png)
 
 Notez que nous pouvons imbriquer des instructions et des variables.
 En fait, le bloc say lui-même est comme un algorithme, où nous avons fourni une entrée de Hello World et il a produit la sortie de Scratch (le chat) «disant» cette phrase:

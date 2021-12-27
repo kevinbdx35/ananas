@@ -36,3 +36,5 @@ Si tu as une erreur ou une question, commences par essayer de la résoudre par t
 Surtout, amuses-toi! C'est tellement gratifiant de voir quelque chose que tu as construit par **toi-même** fonctionner!
 
 ![Fun Fun Fun](https://media.giphy.com/media/StaCvBZCh6uSjGWqVg/giphy.gif)
+
+<iframe width="1347" height="767" src="https://www.youtube.com/embed/aNzJAIeo240" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

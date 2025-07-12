@@ -2,243 +2,703 @@
 sidebar_position: 2
 ---
 
-# CSS 3 - partie 1
+# CSS 3 - Fondamentaux et Stylisation 🎨
 
-En utilisant `HTML`, tu as maintenant la possibilité  de créer des pages Web avec un certain nombre de composants différents et des balises imbriquées les unes dans les autres pour décrire la structure de toute page Web que tu souhaites créer. Tu vas bien entendu continuer à faire du HTML et progresser dans ce langage.
+Maintenant que tu maîtrises les bases du HTML, il est temps de donner vie à tes pages web ! Le CSS va transformer tes pages blanches et ennuyeuses en créations visuellement attractives et professionnelles.
 
-Tes pages Web sont encore assez simples. 
+## 🎯 Qu'est-ce que le CSS ?
 
-Elles sont blanches, avec toutes les balises dans le même type de police, tout est aligné sur le côté gauche de l'écran... Et ce que tu aimerais faire maintenant, c'est ajouter du style à ta page Web, la rendre plus esthétique, donner à tes pages Web un aspect plus personnelle dans le design ou plus professionnelle selon le besoin.
+**CSS (Cascading Style Sheets)** ou "Feuilles de Style en Cascade" est le langage qui permet de styliser et mettre en forme tes pages web. Si HTML est le **squelette** de ta page, CSS en est la **peau et les vêtements**.
 
-CSS va te permettre de faire tout ça et bien plus  encore.
+### Séparation des responsabilités
 
-**CSS (Cascading Style Sheets)** signifie feuilles de style en cascade, c'est du code utilisé pour mettre en forme une page Web, en ajoutant des attributs supplémentaires à tes éléments HTML. 
+```
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│      HTML       │    │       CSS       │    │   JavaScript    │
+│   (Structure)   │    │    (Style)      │    │ (Comportement)  │
+│                 │    │                 │    │                 │
+│ • Contenu       │    │ • Couleurs      │    │ • Interactions  │
+│ • Sémantique    │    │ • Polices       │    │ • Dynamisme     │
+│ • Hiérarchie    │    │ • Layout        │    │ • Logique       │
+│ • Accessibilité │    │ • Animations    │    │ • Données       │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+```
 
-Le HTML est le contenu du site Web et le CSS est le sytle du site Web.
+### Évolution visuelle
 
-## Généralités
+**Avant CSS :**
+- Pages blanches avec police Times New Roman
+- Texte aligné à gauche
+- Aucune hiérarchie visuelle
+- Aspect années 90
 
-### Style en ligne et interne
+**Avec CSS :**
+- Designs modernes et attractifs
+- Typographie soignée
+- Layouts complexes et responsifs
+- Animations et transitions fluides
 
-Il est possible d'écrire du CSS directement dans la page HTML.
+## 📍 Méthodes d'intégration CSS
 
-Dans ces deux cas, tu devras écrire le style sur chaque page HTML du site si tu en as plusieurs.
-
-* **Le style en ligne** - Dans la balise même, mais c'est à éviter. Le style en ligne c'est littéralement ajouté à un élément HTML auquel tu souhaites ajouter du style, un attribut de style à l'intérieur duquel se trouvent les propriétés CSS que tu souhaites implémenter.
-Supprimer le style en ligne permet aussi de nettoyer un peu ton code HTML. tu peux ainsi vraiment te concentrer sur la structure HTML de ta page Web.
-
-* **Le style interne** - Dans le head (uniquement si tu n'as qu'une page HTML). Tu peux aussi inclure des éléments de style dans la section head de la page Web en ajoutant une balise de style, à l'intérieur de laquelle seront toutes les informations de style pour ce site Web en particulier. Tu pourrais considérer cela comme une prise en compte des informations de style à partir du corps réel de la page où tu as eu ce style en ligne pour mettre à la place les informations de style en haut de la page où les mêmes informations de style peuvent être partagées par plusieurs éléments HTML.
-Mettre le style dans la balise head prend de la place et tu pourrais donc essayer de répartir les choses dans un fichier séparé, c'est donc encore une autre façon d'inclure du CSS dans une page HTML.
-
-### Le style externe
-
-Il est donc recommander de créer **une feuille de style**. Il n'y a pas de règle pour nommer la feuille de style mais par convention on l'appelle souvent **style.css**.
+### 1. Style en ligne (à éviter)
 
 ```html
-<link rel="stylesheet" type="text/css" href="style.css">
+<!-- ❌ À éviter : mélange HTML et CSS -->
+<p style="color: red; font-size: 18px;">Texte rouge</p>
+<div style="background: blue; padding: 20px;">Boîte bleue</div>
 ```
 
-L'élément `link` permet de lier le fichier HTML vers un autre fichier, par exemple, ta feuille de style, ici dans l'exmple ci-dessus.
+**Problèmes :**
+- Code HTML pollu
+- Impossible à réutiliser
+- Maintenance difficile
+- Performance dégradée
 
-Ça évite d'avoir plein de code en entête surtout si tu as plusieurs pages avec le même style.
+### 2. Style interne (pour prototypage)
 
-Il n'y a plus de code réel CSS dans ton HTML, cela permet  donc de mettre toutes les infos CSS dans une feuille de style. C'est beaucoup plus propre et tout le monde fait comme ça maintenant.
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS dans le head */
+        h1 {
+            color: navy;
+            text-align: center;
+        }
+        
+        .highlight {
+            background: yellow;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mon titre</h1>
+    <p class="highlight">Texte surligné</p>
+</body>
+</html>
+```
 
-**Pourquoi est-ce avantageux?**
+**Usage :** Prototypage rapide, page unique
 
-Eh bien, d'une part, tu pourrais imaginer  que souvent si tu exécutes un site Web, tu peux avoir plusieurs pages différentes sur ce site Web qui doivent toutes êtres stylés de manière similaire.
+### 3. Style externe (recommandé) ⭐
 
-Peut-être que la bannière en haut sera de la même couleur, utiliser des polices cohérentes dans toutes les pages Web...
-
-Il serait assez fastidieux et répétitif d'avoir à tout répéter le même code CSS sur toutes tes différentes pages HTML.
-
-Tu peux donc écrire une fois le code CSS et l'utiliser dans tout un tas d'autres pages HTML.
-
-Il est possible de lier aussi plusieurs page CSS différentes si tu as un très gros site.
-
-## Art
-
-Le CSS ne sert pas qu'à faire de jolies boutons pour ton site, mais aussi pour créer de l'art.
-
-![Francine CSS](https://raw.githubusercontent.com/cyanharlow/purecss-francine/master/preview.jpg)
-
-*Francine CSS*
-
-[Art Css](https://css-art.com)
-
-## Anatomie d'une règle CSS
-
-```css
-selecteur {propriete : valeur;}
+```html
+<!-- dans index.html -->
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
 ```
 
 ```css
-header{
-	 color: red;
-	 propriete: valeur;
+/* dans style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    border-bottom: 2px solid #007bff;
 }
 ```
 
-Cette structure s'appelle un ensemble de règles (ou seulement « une règle »). 
+**Avantages :**
+- ✅ Code HTML propre et sémantique
+- ✅ Réutilisable sur plusieurs pages
+- ✅ Maintenance centralisée
+- ✅ Cache navigateur optimisé
+- ✅ Collaboration équipe facilitée
 
-Les différentes parties se nomment :
+## 🧬 Anatomie d'une règle CSS
 
-**Sélecteur (qui?)**
+### Structure de base
 
-C'est le nom de l'élément HTML situé au début de l'ensemble des règles. Il permet de sélectionner les éléments sur lesquels appliquer le style souhaité (en l'occurence, les éléments `p`). Pour mettre en forme un élément différent, il suffit de changer le sélecteur.
+```css
+/* Sélecteur { Propriété: Valeur; } */
+h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+```
 
-**Déclaration**
+### Composants détaillés
 
-C'est une règle simple comme `color: red;` qui détermine les propriétés de l'élément que l'on veut mettre en forme.
+```css
+/* Sélecteur : QUI cibler */
+.navigation {
+    /* Propriété : QUOI modifier */
+    background-color: /* Valeur : COMMENT modifier */ #3498db;
+    padding: 15px 30px;
+    border-radius: 8px;
+    /* Chaque déclaration se termine par ; */
+}
 
-**Propriétés (quoi?)**
+/* Règle avec multiple sélecteurs */
+h1, h2, h3 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
 
-Les différentes façons dont on peut mettre en forme un élément HTML (dans ce cas, `color` est une propriété des éléments `p`). En CSS, tu choisisses les différentes propriétés que tu veux utiliser dans une règle CSS.
+/* Règle avec sélecteur descendant */
+.article p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+```
 
-**Valeur de la propriété (comment?)**
+### Règles multiples
 
-À droite de la propriété, après les deux points, tu as la valeur de la propriété. Celle-ci permet de choisir une mise en forme parmi d'autres pour une propriété donnée (par exemple, il y a d'autres couleurs que `red` pour la propriété `color`).
+```css
+.card {
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    
+    /* Dimensions */
+    width: 300px;
+    min-height: 400px;
+    
+    /* Espacement */
+    padding: 20px;
+    margin: 10px;
+    
+    /* Apparence */
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    
+    /* Transition */
+    transition: transform 0.3s ease;
+}
 
-Ainsi, si tu veux modifier plusieurs propriétés d'un coup, tu peux utiliser plusieurs déclarations dans une seule règle en les séparant par des points-virgules.
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+```
 
-:::info
- Les robots des moteurs de recherche ne scannent que le HTML d'un site et pas le CSS. Il faut donc faire attention aux balises que vous utilisez.
+## 💬 Commentaires CSS
+
+### Syntaxe des commentaires
+
+```css
+/* Commentaire sur une ligne */
+
+/*
+Commentaire
+sur plusieurs
+lignes
+*/
+
+/* =================================
+   SECTION NAVIGATION
+   ================================= */
+.navbar {
+    background: #333;
+}
+
+/* TODO: Optimiser pour mobile */
+.sidebar {
+    width: 250px; /* Largeur fixe temporaire */
+}
+
+/*
+FIXME: Bug d'affichage sur IE11
+Utiliser fallback pour flexbox
+*/
+.flex-container {
+    display: flex;
+}
+```
+
+### Bonnes pratiques de commentaires
+
+```css
+/* =================================
+   TABLE DES MATIÈRES
+   =================================
+   1. Reset & Base
+   2. Typography
+   3. Layout
+   4. Components
+   5. Utilities
+   6. Media Queries
+   ================================= */
+
+/* 1. RESET & BASE
+   ================================= */
+* {
+    box-sizing: border-box;
+}
+
+/* 2. TYPOGRAPHY
+   ================================= */
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    /* 16px base pour accessibilité */
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Component: Button Primary
+   Usage: <button class="btn btn--primary">
+   ================================= */
+.btn--primary {
+    background: #007bff;
+    color: white;
+    /* Respect contrast ratio 4.5:1 minimum */
+}
+```
+
+## 🎯 Sélecteurs CSS
+
+### Sélecteurs de base
+
+```css
+/* Sélecteur d'élément */
+p {
+    margin-bottom: 1rem;
+}
+
+/* Sélecteur de classe (réutilisable) */
+.highlight {
+    background: yellow;
+    padding: 0.2em 0.4em;
+}
+
+/* Sélecteur d'ID (unique) */
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Sélecteur universel */
+* {
+    margin: 0;
+    padding: 0;
+}
+```
+
+### Usage HTML correspondant
+
+```html
+<!-- Ciblé par p {} -->
+<p>Paragraphe avec marge en bas</p>
+
+<!-- Ciblé par .highlight {} -->
+<span class="highlight">Texte surligné</span>
+<div class="highlight">Div surligné</div>
+
+<!-- Ciblé par #header {} -->
+<header id="header">
+    <nav>Navigation fixe</nav>
+</header>
+```
+
+### Classes vs IDs
+
+| Aspect | Classe (.) | ID (#) |
+|--------|-----------|--------|
+| **Usage** | Réutilisable | Unique |
+| **HTML** | `class="nav"` | `id="header"` |
+| **CSS** | `.nav {}` | `#header {}` |
+| **Priorité** | Faible | Forte |
+| **JavaScript** | Multiple | Un seul |
+| **Recommandation** | ✅ À privilégier | ⚠️ Usage limité |
+
+```css
+/* ✅ Bon : Classes réutilisables */
+.btn { padding: 10px 20px; }
+.btn-primary { background: blue; }
+.btn-large { font-size: 1.2em; }
+
+/* ⚠️ À éviter : IDs multiples */
+#button1 { padding: 10px 20px; }
+#button2 { padding: 10px 20px; } /* Duplication */
+```
+
+## 🔤 Typographie CSS
+
+### Taille de police
+
+```css
+/* ❌ Pixels : Non accessible */
+.fixed-size {
+    font-size: 16px; /* Ne s'adapte pas aux préférences utilisateur */
+}
+
+/* ✅ Unités relatives : Accessibles */
+.responsive-size {
+    font-size: 1rem;     /* Relatif à la racine (16px par défaut) */
+    font-size: 1.2em;    /* Relatif au parent */
+    font-size: 110%;     /* Pourcentage du parent */
+}
+
+/* ✅ Mots-clés : Simples et sémantiques */
+.keyword-sizes {
+    font-size: small;    /* Plus petit */
+    font-size: medium;   /* Taille normale */
+    font-size: large;    /* Plus grand */
+    font-size: x-large;  /* Très grand */
+    font-size: xx-large; /* Énorme */
+}
+```
+
+### Échelle typographique harmonieuse
+
+```css
+:root {
+    /* Échelle modulaire basée sur 1.25 (quarte majeure) */
+    --text-xs: 0.8rem;     /* 12.8px */
+    --text-sm: 0.9rem;     /* 14.4px */
+    --text-base: 1rem;     /* 16px */
+    --text-lg: 1.25rem;    /* 20px */
+    --text-xl: 1.563rem;   /* 25px */
+    --text-2xl: 1.953rem;  /* 31.25px */
+    --text-3xl: 2.441rem;  /* 39px */
+    --text-4xl: 3.052rem;  /* 48.8px */
+}
+
+h1 { font-size: var(--text-4xl); }
+h2 { font-size: var(--text-3xl); }
+h3 { font-size: var(--text-2xl); }
+h4 { font-size: var(--text-xl); }
+p  { font-size: var(--text-base); }
+small { font-size: var(--text-sm); }
+```
+
+### Polices de caractères
+
+```css
+/* Stack de polices robuste */
+.modern-sans {
+    font-family: 
+        -apple-system,           /* macOS/iOS */
+        BlinkMacSystemFont,      /* macOS Chrome */
+        'Segoe UI',              /* Windows */
+        'Roboto',                /* Android */
+        'Helvetica Neue',        /* macOS Safari */
+        Arial,                   /* Fallback universel */
+        sans-serif;              /* Générique */
+}
+
+.readable-serif {
+    font-family: 
+        'Georgia',
+        'Times New Roman',
+        'Times',
+        serif;
+}
+
+.code-mono {
+    font-family: 
+        'SF Mono',               /* macOS */
+        'Monaco',                /* macOS ancien */
+        'Consolas',              /* Windows */
+        'Liberation Mono',       /* Linux */
+        'Courier New',           /* Fallback */
+        monospace;               /* Générique */
+}
+```
+
+### Polices Web personnalisées
+
+```css
+/* Méthode 1 : Google Fonts (simple) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* Méthode 2 : Auto-hébergé (performance) */
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter-Regular.woff2') format('woff2'),
+         url('./fonts/Inter-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap; /* Améliore le temps de chargement */
+}
+
+/* Utilisation avec fallback */
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+}
+```
+
+## 🌈 Système de couleurs CSS
+
+### Formats de couleurs
+
+```css
+.color-formats {
+    /* Mots-clés (limité mais pratique) */
+    color: red;
+    color: steelblue;
+    color: transparent;
+    
+    /* Hexadécimal (le plus commun) */
+    color: #ff0000;        /* Rouge pur */
+    color: #00ff00;        /* Vert pur */
+    color: #0066cc;        /* Bleu */
+    color: #f39c12;        /* Orange */
+    
+    /* Hexadécimal court */
+    color: #f00;           /* Équivaut à #ff0000 */
+    color: #0fc;           /* Équivaut à #00ffcc */
+    
+    /* RGB (Rouge, Vert, Bleu) */
+    color: rgb(255, 0, 0);      /* Rouge */
+    color: rgb(0, 122, 255);    /* Bleu iOS */
+    
+    /* RGBA (avec transparence) */
+    color: rgba(255, 0, 0, 0.5);    /* Rouge à 50% */
+    background: rgba(0, 0, 0, 0.1);  /* Noir à 10% */
+    
+    /* HSL (Teinte, Saturation, Luminosité) */
+    color: hsl(0, 100%, 50%);     /* Rouge */
+    color: hsl(210, 100%, 50%);   /* Bleu */
+    color: hsl(120, 50%, 75%);    /* Vert pastel */
+    
+    /* HSLA (avec transparence) */
+    color: hsla(240, 100%, 50%, 0.8); /* Bleu à 80% */
+}
+```
+
+### Palette de couleurs harmonieuse
+
+```css
+:root {
+    /* Couleurs primaires */
+    --primary-50: #eff6ff;
+    --primary-100: #dbeafe;
+    --primary-200: #bfdbfe;
+    --primary-300: #93c5fd;
+    --primary-400: #60a5fa;
+    --primary-500: #3b82f6;  /* Couleur principale */
+    --primary-600: #2563eb;
+    --primary-700: #1d4ed8;
+    --primary-800: #1e40af;
+    --primary-900: #1e3a8a;
+    
+    /* Couleurs neutres */
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-500: #6b7280;    /* Texte secondaire */
+    --gray-900: #111827;    /* Texte principal */
+    
+    /* Couleurs fonctionnelles */
+    --success: #10b981;
+    --warning: #f59e0b;
+    --error: #ef4444;
+    --info: #3b82f6;
+}
+
+/* Utilisation sémantique */
+.btn-primary {
+    background: var(--primary-500);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-600);
+}
+
+.text-muted {
+    color: var(--gray-500);
+}
+```
+
+## ✨ Stylisation du texte
+
+### Formatage avancé
+
+```css
+.text-styling {
+    /* Épaisseur de police */
+    font-weight: 100;    /* Ultra-light */
+    font-weight: 300;    /* Light */
+    font-weight: 400;    /* Normal (défaut) */
+    font-weight: 600;    /* Semi-bold */
+    font-weight: 700;    /* Bold */
+    font-weight: 900;    /* Black */
+    
+    /* Style de police */
+    font-style: normal;   /* Droit */
+    font-style: italic;   /* Italique */
+    font-style: oblique;  /* Oblique (rare) */
+    
+    /* Décoration du texte */
+    text-decoration: none;          /* Aucune */
+    text-decoration: underline;     /* Souligné */
+    text-decoration: line-through;  /* Barré */
+    text-decoration: overline;      /* Ligne au-dessus */
+    
+    /* Transformation du texte */
+    text-transform: uppercase;      /* MAJUSCULES */
+    text-transform: lowercase;      /* minuscules */
+    text-transform: capitalize;     /* Première Lettre */
+    text-transform: none;           /* Aucune transformation */
+    
+    /* Alignement du texte */
+    text-align: left;     /* Gauche (défaut) */
+    text-align: center;   /* Centré */
+    text-align: right;    /* Droite */
+    text-align: justify;  /* Justifié */
+}
+```
+
+### Lisibilité et accessibilité
+
+```css
+.readable-text {
+    /* Interlignage pour la lisibilité */
+    line-height: 1.5;      /* Minimum recommandé */
+    line-height: 1.6;      /* Optimal pour la lecture */
+    
+    /* Espacement des lettres */
+    letter-spacing: 0.05em; /* Légère aération */
+    
+    /* Espacement des mots */
+    word-spacing: 0.1em;
+    
+    /* Largeur de ligne optimale */
+    max-width: 65ch;        /* 65 caractères maximum */
+    
+    /* Contraste suffisant */
+    color: #2d3748;         /* Sombre mais pas noir pur */
+    background: #ffffff;    /* Blanc pour contraste maximal */
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+    .responsive-text {
+        font-size: 1rem;
+        line-height: 1.6;
+        /* Police plus grande sur mobile pour lisibilité */
+    }
+}
+```
+
+## 🎨 CSS créatif et artistique
+
+Le CSS peut créer de véritables œuvres d'art ! Voici quelques exemples inspirants :
+
+### Art CSS célèbre
+
+```css
+/* Inspiré de "Francine" par Diana Smith */
+.css-art-face {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background: radial-gradient(
+        circle at 30% 30%,
+        #ffdbac 0%,
+        #f4a261 45%,
+        #e76f51 100%
+    );
+    border-radius: 50%;
+}
+
+.css-art-eye {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background: #2d3748;
+    border-radius: 50%;
+    top: 100px;
+}
+
+.css-art-eye.left { left: 80px; }
+.css-art-eye.right { right: 80px; }
+```
+
+### Créations géométriques
+
+```css
+/* Triangle CSS pur */
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #3b82f6;
+}
+
+/* Cercle avec dégradé */
+.gradient-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(
+        45deg,
+        #667eea 0%,
+        #764ba2 100%
+    );
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+```
+
+**Ressources d'inspiration :**
+- [CSS Art Gallery](https://css-art.com) - Galerie d'art CSS
+- [A Single Div](https://a.singlediv.com/) - Art avec une seule div
+- [CSS Battle](https://cssbattle.dev/) - Défis de création CSS
+
+:::info SEO et CSS 🔍
+Les robots des moteurs de recherche analysent principalement le HTML, pas le CSS. Assure-toi que ta structure HTML reste sémantique et accessible, même avec un design complexe.
 :::
 
-## Commentaires en CSS
+## 🛠️ Exercices pratiques
 
-Comme dans tout commentaire, il ne faut pas mettre d'information confidentielle dans tes commentaires.
-Un commentaire commence toujours par `/*` et fini par `*/`
+### Exercice 1 : Carte de profil
 
-```css
-/* Ceci est un commentaire */
+Crée une carte de profil stylisée :
+
+```html
+<div class="profile-card">
+    <img src="avatar.jpg" alt="Photo de profil" class="avatar">
+    <h2 class="name">Alice Dupont</h2>
+    <p class="title">Développeuse Front-end</p>
+    <p class="bio">Passionnée par le design et l'expérience utilisateur</p>
+    <button class="contact-btn">Contacter</button>
+</div>
 ```
 
-![CSS Gif](https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif)
+### Exercice 2 : Navigation stylisée
 
-## Class et Id
+```html
+<nav class="main-nav">
+    <ul class="nav-list">
+        <li><a href="#" class="nav-link active">Accueil</a></li>
+        <li><a href="#" class="nav-link">À propos</a></li>
+        <li><a href="#" class="nav-link">Services</a></li>
+        <li><a href="#" class="nav-link">Contact</a></li>
+    </ul>
+</nav>
+```
 
-**Class**
+### Exercice 3 : Article de blog
 
-En HTML ⇒ `class ="Nom de la class"`
+Stylise un article avec typographie soignée, hiérarchie claire, et bonne lisibilité.
 
-En CSS ⇒ `.nom de la class`
+---
 
-**Id**
-
-En HTML ⇒ `id="Nom de l'ID"`
-
-En CSS ⇒ `#nom de l'ID`
-
-Par convention on utilise un `id` toujours de manière unique. L'`id` est moins utilisé que les `class`, voir rarement. Les `class` peuvent-être utilisées plusieurs fois et il faut les prévilégiers.
-
-## Changer les tailles du texte
-
-:::caution
-C'est une notion qui peut-être complexe à comprendre, il y aura donc un chapitre spécifique aux unités CSS.
+:::success Félicitations ! 🎉
+Tu maîtrises maintenant les **fondamentaux du CSS** ! Tu peux transformer tes pages HTML en créations visuellement attractives. CSS est un langage créatif puissant - laisse libre cours à ton imagination tout en gardant à l'esprit l'expérience utilisateur.
 :::
 
-Il y a plusieure manière de définir la taille d'un texte :
+## 🔗 Ressources pour approfondir
 
-* La taille absolue
-* La taille relative
+- 📖 [MDN CSS Reference](https://developer.mozilla.org/fr/docs/Web/CSS) - Documentation complète
+- 🎨 [CSS-Tricks](https://css-tricks.com/) - Techniques et astuces CSS
+- 🎯 [CSS Diner](https://flukeout.github.io/) - Jeu pour apprendre les sélecteurs
+- 🎪 [Flexbox Froggy](https://flexboxfroggy.com/) - Apprendre Flexbox en jouant
+- 📊 [Can I Use](https://caniuse.com/) - Compatibilité des propriétés CSS
+- 🎨 [Google Fonts](https://fonts.google.com/) - Polices web gratuites
 
-**En pixels**
-
-L'utilisation des pixels `px` permet d'obtenir un résultat statique, absolu et indépendant du système
-d'exploitation et du navigateur. Cependant, cette méthode est déconseillée car elle n'est pas accessible. Ainsi, les utilisateurs ne peuvent pas adapter la taille du texte avec leurs réglages si besoin.
-
-**Words**
-
-Les mots-clés sont une méthode simple et efficace pour déterminer la taille de fonte à utiliser. En utilisant un mot-clé sur l'élément, on peut définir des tailles relatives sur toute la page et réduire ou augmenter la taille de la fonte en conséquence.
-
-**EM**
-
-On peut également définir la taille de la fonte en `em`. La taille d'une valeur exprimée en em est dynamique. Lorsqu'on définit la propriété font-size, un em est équivalent à la taille de fonte appliquée à l'élément parent de l'élément courant. Si cette taille n'a pas été définie pour l'élément parent, elle correspondra à la taille par défaut du navigateur (généralement 16px). Ainsi, si on définit font-size avec une valeur de 20px sur l'élément body, 1em correspondra à 20px et 2em à 40px. Ici, la valeur 2 est un facteur multiplicateur de la taille.
-
-```css title="Exemple de taille en word"
-p{
- font-size: small;
-}
-```
-
-```css title="Exemple de taille en ex"
-p{
- font-size: 1em;
-}
-```
-
-```css title="Exemple de taille en ex"
-p{
- font-size: 1ex;
-}
-```
-
-Il existe beaucoup d'unités en css, le mieux est que tu te réfaires au chapitre dédié sur ce sujet.
-
-[Font-Size](https://developer.mozilla.org/fr/docs/Web/CSS/font-size)
-
-## Changer les polices
-
-```css title="Prototype de construction"
-font-family: 'Choix 1', 'choix2', 'Choix 3', generique;
-```
-
-Polices génériques : sans-serif, serif, monospace.
-
-Tu ne peux pas mettre une police que le navigateur ne connait pas.
-Utilises une police personnalisée ⇒ Télécharges la police
-
-```css title="Téléchargement d'une police"
-@font-face{
-	 font-family: 'nom';
-	 src: url('../..') format('truetype');
-}
-```
-
-On peut aussi passer par **un service propre** à la fonction polices.
-
-Exemple : google fonts, intégration html + intégration css,  [Google Fonts](https://fonts.google.com) est un service d’hébergement gratuit de polices d’écritures pour le Web, démarré en 2010.
-[Design et Typography](https://design.google/library/google-fonts/?utm_source=Google&utm_medium=Fonts&utm_campaign=Article%20Tab)
-
-## Les couleurs
-
-En CSS, les couleurs sont affichées en combinant la lumière rouge, verte et bleue (RGB).
-
-![Hexadecimal Color Wheel](https://i.pinimg.com/originals/91/db/31/91db3125752ae5f150be15a173b2759c.jpg)
-
-Il existe trois manières principales d'implémenter les couleurs.
-
-* Les words
-* Les valeurs en hexadécimal
-* Les valeurs en rgb(a)
-
-## Gras, italique, sous ligné
-
-```css
-font-weight: bold;
-```
-
-Tu peux gérer l'épaisseur de 100 à 900 (de 100 en 100) 400 = normal et 700 = bold font-weight: normal;
-
-```css
-font-weight: normal;
-```
-
-```css
-font-style: italic;
-```
-
-```css
-text-decoration: underline;
-text-decoration: none;
-text-decoration: line-through;
-```
-
-```css
-text-align : left;
-text-align : center;
-text-align : right;
-```
-
-## Exercices
+Le CSS transforme le web en un médium d'expression visuelle infini ! 🚀

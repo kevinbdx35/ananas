@@ -18,12 +18,13 @@ Pour que le déploiement fonctionne, tu dois configurer quelques paramètres dan
 1. Va sur ton repository GitHub : `https://github.com/kevinbdx35/ananas`
 2. Clique sur **Settings** (Paramètres)
 3. Dans le menu de gauche, clique sur **Pages**
-4. Dans la section **Source**, sélectionne **GitHub Actions**
+4. Dans la section **Source**, sélectionne **Deploy from a branch**
+5. Choisis la branche **gh-pages** et le dossier **/ (root)**
 
 ### 2. Vérifier les permissions
 
 1. Toujours dans **Settings** > **Pages**
-2. Assure-toi que le **Source** est bien défini sur **GitHub Actions**
+2. Assure-toi que le **Source** est bien défini sur la branche **gh-pages**
 3. Les permissions sont automatiquement gérées par le workflow
 
 ### 3. Permissions du repository (si nécessaire)
